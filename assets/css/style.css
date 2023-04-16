@@ -8,15 +8,20 @@
   transition: all 0.5s ease;
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, rgba(79,51,176,0.9),rgba(210,53,165,0.5)), url(../images/bgimg.jpg);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(79, 51, 176, 0.9),
+      rgba(210, 53, 165, 0.5)
+    ),
+    url(../images/bgimg.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -26,7 +31,7 @@ body{
   justify-content: start;
 }
 
-body p{
+body p {
   /* text-align: center; */
   margin-top: 10px;
   font-size: 4rem;
@@ -41,30 +46,30 @@ body p{
   background-position: center;
 }
 
-.container{
+.container {
   width: 100vw;
   display: grid;
   place-items: center;
   margin-top: 30px;
 }
 
-.calculator{
+.calculator {
   position: relative;
   width: auto;
   height: auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 30px #000;
-  }
+}
 
-.theme-toggler{
+.theme-toggler {
   position: absolute;
   top: 30px;
   right: 30px;
   cursor: pointer;
 }
 
-#display{
+#display {
   margin: 0px 10px;
   width: auto;
   height: 100px;
@@ -77,12 +82,12 @@ body p{
   overflow-x: scroll;
 }
 
-#display::-webkit-scrollbar{
+#display::-webkit-scrollbar {
   display: block;
   height: 3px;
 }
 
-button{
+button {
   width: 60px;
   height: 60px;
   border: 0;
@@ -93,25 +98,25 @@ button{
   transition: all 0.2s ease;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.11);
 }
 
-button#equal{
+button#equal {
   height: 130px;
 }
 
 /* light theme */
 
-h1{
+h1 {
   position: relative;
 }
 
-i{
+i {
   color: black;
 }
 
-i.fa.fa-sun-o::after{
+i.fa.fa-sun-o::after {
   content: "Light Theme";
   color: #fff;
   font-size: 15px;
@@ -123,7 +128,7 @@ i.fa.fa-sun-o::after{
   top: 11px;
 }
 
-i.fa.fa-moon-o::after{
+i.fa.fa-moon-o::after {
   content: "Dark Theme";
   color: #000;
   font-size: 15px;
@@ -135,68 +140,74 @@ i.fa.fa-moon-o::after{
   top: 11px;
 }
 
-.calculator{
+.calculator {
   /* background-color: #fff; */
-  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(../images/textStrokeImg.png);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../images/textStrokeImg.png);
 }
 
-.calculator #display{
+.calculator #display {
   color: #0a1e23;
 }
 
-.calculator button#clear{
+.calculator button#clear {
   background-color: #ffd5d8;
   color: #fc4552;
 }
 
-.calculator button.btn-number{
+.calculator button.btn-number {
   background-color: #c3eaff;
   color: #000;
 }
 
-.calculator button.btn-operator{
+.calculator button.btn-operator {
   background-color: #ffd0fd;
   color: #f967f3;
 }
 
-.calculator button.btn-equal{
+.calculator button.btn-equal {
   background-color: #adf9e7;
   color: #000;
 }
 
 /* dark theme */
 
-.calculator.dark i{
+.calculator.dark i {
   color: white;
 }
 
-.calculator.dark{
+.calculator.dark {
   /* background-color: rgb(7, 17, 21); */
-  background-image: linear-gradient(rgba(7, 17, 21,0.89), rgba(7, 17, 21,0.89)), url(../images/textStrokeImg.png);
+  background-image: linear-gradient(
+      rgba(7, 17, 21, 0.89),
+      rgba(7, 17, 21, 0.89)
+    ),
+    url(../images/textStrokeImg.png);
 }
 
-.calculator.dark #display{
+.calculator.dark #display {
   color: #f8fafd;
 }
 
-.calculator.dark button#clear{
+.calculator.dark button#clear {
   background-color: #2d191e;
   color: #bd3740;
 }
 
-.calculator.dark button.btn-number{
+.calculator.dark button.btn-number {
   background-color: #1b2f38;
   color: #f8fafb;
 }
 
-.calculator.dark button.btn-operator{
+.calculator.dark button.btn-operator {
   background-color: #2e1f39;
   color: #aa00a4;
 }
 
-.calculator.dark button.btn-equal{
+.calculator.dark button.btn-equal {
   background-color: #223323;
   color: #fff;
 }
-
-
